@@ -4,29 +4,29 @@
 class Jeet < Formula
   desc "Global git repo index and worktree manager"
   homepage "https://github.com/peterddod/jeet"
-  version "0.2.0"
+  version "0.2.3"
   license "MIT"
   head "https://github.com/peterddod/jeet.git", branch: "main"
 
   on_macos do
     on_arm do
-      url "https://github.com/peterddod/jeet/releases/download/v0.2.0/jeet-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "cdb10f389b54ed0bff0309383ecd3e2b80e1d62f321480c6c99205474b70f774"
+      url "https://github.com/peterddod/jeet/releases/download/v0.2.3/jeet-v0.2.3-aarch64-apple-darwin.tar.gz"
+      sha256 "ce7acabd4c0a2606e9968d24ef426f29ba129e40dfd71b74dcd63acbda61be8c"
     end
     on_intel do
-      url "https://github.com/peterddod/jeet/releases/download/v0.2.0/jeet-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8ac289bfc7ca7b40e61b70a0ed22e117a5b32a8edeaf70199f930cc4b3ffecd3"
+      url "https://github.com/peterddod/jeet/releases/download/v0.2.3/jeet-v0.2.3-x86_64-apple-darwin.tar.gz"
+      sha256 "2a9fce5b55cc8260fd5a3154cea0c9e288ecc18db7a761d9ff9756cf9ff82d41"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/peterddod/jeet/releases/download/v0.2.0/jeet-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "58aa97e34f137638f9b8a7bfaadb5d4965fd5b8e25a270b60490ad614b7e9d97"
+      url "https://github.com/peterddod/jeet/releases/download/v0.2.3/jeet-v0.2.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e90b007188e0580061b723bbc9c704d1961e9b1765446713c81f043c4993df25"
     end
     on_intel do
-      url "https://github.com/peterddod/jeet/releases/download/v0.2.0/jeet-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "85a502c2085fda1b8c1d082473169f65eb3f2718c87d1157cdf964b658b63d88"
+      url "https://github.com/peterddod/jeet/releases/download/v0.2.3/jeet-v0.2.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b7c3a9c8acbe4277a62f7a59fc023f6831cf4ba30a1e6c519e7b3b85a67e171a"
     end
   end
 
@@ -34,6 +34,7 @@ class Jeet < Formula
 
   def install
     bin.install "jeet"
+    generate_completions_from_executable(bin/"jeet", "completions")
   end
 
   test do
