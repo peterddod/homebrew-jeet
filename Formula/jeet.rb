@@ -4,29 +4,29 @@
 class Jeet < Formula
   desc "Global git repo index and worktree manager"
   homepage "https://github.com/peterddod/jeet"
-  version "0.12.0"
+  version "0.12.1"
   license "MIT"
   head "https://github.com/peterddod/jeet.git", branch: "main"
 
   on_macos do
     on_arm do
-      url "https://github.com/peterddod/jeet/releases/download/v0.12.0/jeet-v0.12.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c56031d48650ebadfa2eaa652cf5132fbc62a7df29b33792fe4e92a2de38bcf6"
+      url "https://github.com/peterddod/jeet/releases/download/v0.12.1/jeet-v0.12.1-aarch64-apple-darwin.tar.gz"
+      sha256 "b6434ffbc72d878d32ae2061553515a3483d767baba244845ac783d8e0ee7b30"
     end
     on_intel do
-      url "https://github.com/peterddod/jeet/releases/download/v0.12.0/jeet-v0.12.0-x86_64-apple-darwin.tar.gz"
-      sha256 "1bae183bad6e86caabae86d57b72d2a6faaf99c9faa008edddfb5ad2eae54c32"
+      url "https://github.com/peterddod/jeet/releases/download/v0.12.1/jeet-v0.12.1-x86_64-apple-darwin.tar.gz"
+      sha256 "19fd2a37f516195013446c56ee767be365cf3399f3f10e1dd81986d1cc75adf2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/peterddod/jeet/releases/download/v0.12.0/jeet-v0.12.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2fc46f918e353a34735703f1df0fac0f82ceda3c080eefdf8832ee28af410862"
+      url "https://github.com/peterddod/jeet/releases/download/v0.12.1/jeet-v0.12.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "15cdac2439bdc92f33f630d9d2ceb12d6d45ea8f0a39e09690476e09b5b68262"
     end
     on_intel do
-      url "https://github.com/peterddod/jeet/releases/download/v0.12.0/jeet-v0.12.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cc83b341eed22eb021b4412f4ada44530e2893d6c6ed3b040ae8280bf1f969ab"
+      url "https://github.com/peterddod/jeet/releases/download/v0.12.1/jeet-v0.12.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4959849be4c0a664c93216654ace2925dfaf64089de9c496641b154b699895d2"
     end
   end
 
